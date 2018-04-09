@@ -1,10 +1,10 @@
 package heroes;
 
-public class staticShock extends Superhero implements IFlightSpeed, IBlackHeroes{
+public class StaticShock extends Superhero implements IFlightSpeed, IBlackHeroes{
 
 
 
-    public staticShock(String rN, String[] sP) {
+    public StaticShock(String rN, String[] sP) {
         super(rN, sP);
     }
 
@@ -18,6 +18,6 @@ public class staticShock extends Superhero implements IFlightSpeed, IBlackHeroes
     }
 
     public String myBlackHero() {
-        return "My black hero is staticShock";
+        return "My black hero is StaticShock";
     }
 }
