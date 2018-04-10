@@ -16,7 +16,7 @@ public abstract class Superhero {
 
 
     //method Signatures / stubs
-    abstract String listPowers();
+    abstract String[] listPowers();
 
 
     //Getters and Setters

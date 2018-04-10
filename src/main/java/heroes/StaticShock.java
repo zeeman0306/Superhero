@@ -8,8 +8,8 @@ public class StaticShock extends Superhero implements IFlightSpeed, IBlackHeroes
         super(rN, sP);
     }
 
-    String listPowers() {
-        return "Electrokinesis, Flight(with use of metal disc), Partial Magnetism";
+    String[] listPowers() {
+        return getSpecialPowers();
     }
 
 

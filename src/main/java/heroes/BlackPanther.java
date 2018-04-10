@@ -11,8 +11,8 @@ public class BlackPanther extends Superhero implements IBlackHeroes{
 
 
     //Method
-    String listPowers() {
-        return "Super Strength, Enhanced Endurance, Super Agility";
+    String[] listPowers() {
+        return getSpecialPowers();
     }
 
 

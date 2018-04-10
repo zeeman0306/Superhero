@@ -11,8 +11,8 @@ public class GreenLantern extends Superhero implements IFlightSpeed{
 
 
 
-    String listPowers() {
-        return "Flight, Hard-light Constructs, Energy blasts";
+    String[] listPowers() {
+        return getSpecialPowers();
     }
 
     public double flightSpeed() {

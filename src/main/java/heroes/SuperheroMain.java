@@ -7,7 +7,7 @@ public class SuperheroMain {
 
     SpiderMan spiderMan = new SpiderMan("Miles Morales", new String[]{"Spider sense", "Super agility", "Wall crawling"});
 
-    StaticShock StaticShock = new StaticShock("Vergil Hawkins", new String[]{"Electrokinesis", "Flight(Riding metal disc)", "EMP's"});
+    StaticShock staticShock = new StaticShock("Vergil Hawkins", new String[]{"Electrokinesis", "Flight(Riding metal disc)", "EMP's"});
 
     GreenLantern greenLantern = new GreenLantern("John Stewart", new String[]{"Flight", "Hard-light construction" ,"Energy blasts"});
 
@@ -19,11 +19,18 @@ public class SuperheroMain {
 
         System.out.println(" greenLantern can fly at " + greenLantern.flightSpeed() + "mph");
         System.out.println("=========================================================================================================");
-        System.out.println(" StaticShock can fly at " + StaticShock.flightSpeed() + "mph");
+        System.out.println(" StaticShock can fly at " + staticShock.flightSpeed() + "mph");
         System.out.println("=========================================================================================================");
 
 
-        System.out.println(StaticShock.myBlackHero() + ", and he can fly at " + StaticShock.flightSpeed() + "mph");
+        System.out.println(staticShock.myBlackHero() + ", and he can fly at " + staticShock.flightSpeed() + "mph");
+
+        IFlightSpeed[] flyingSupesArr = new IFlightSpeed[]{spiderMan, staticShock, greenLantern};
+        for ( IFlightSpeed flyingspeed : flyingSupesArr){
+            System.out.println("=========================================================================================================");
+            System.out.println( flyingspeed.flightSpeed() + "mph." );
+
+        }
 
 
 

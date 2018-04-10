@@ -4,6 +4,4 @@ public interface IFlightSpeed {
 
     double flightSpeed();
 
-
-
 }

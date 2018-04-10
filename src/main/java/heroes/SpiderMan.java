@@ -1,6 +1,6 @@
 package heroes;
 
-public class SpiderMan extends Superhero{
+public class SpiderMan extends Superhero implements IFlightSpeed{
 
 
     //Constructor
@@ -9,10 +9,13 @@ public class SpiderMan extends Superhero{
     }
 
     //Method
-    String listPowers() {
-        return "Wall crawling, Web-swinging, Super Agility";
+    String[] listPowers() {
+        return getSpecialPowers();
     }
 
 
+    public double flightSpeed() {
+        return 47.5;
+    }
 }
 
